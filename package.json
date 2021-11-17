@@ -1,0 +1,26 @@
+{
+  "name": "next-rn-global-props",
+  "version": "1.0.0",
+  "description": "Better React Native Global Props by adding a little tweaks",
+  "main": "index.js",
+  "keywords": ["react-native", "global-props"],
+  "author": {
+    "name": "KRSBX"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@types/react-native": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krsbx/next-rn-global-props.git"
+  },
+  "bugs": {
+    "url": "https://github.com/krsbx/next-rn-global-props/issues"
+  },
+  "types": "src/index.d.ts"
+}
