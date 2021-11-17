@@ -13,7 +13,6 @@
     "react-native": "*"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
   },
   "repository": {
     "type": "git",

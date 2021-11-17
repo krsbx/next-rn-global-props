@@ -1,8 +1,6 @@
-import _ from 'lodash';
-
 export default (customProps, originalProps) => {
-  if (_.isArray(originalProps.style)) {
-    _.forEach(originalProps.style, (style) => {
+  if (Array.isArray(originalProps.style)) {
+    originalProps.style.forEach((style) => {
       customProps.style = [...customProps.style, style];
     });
   } else {
