@@ -1,23 +1,23 @@
-import { ScrollView } from 'react-native';
+import { FlatList } from 'react-native';
 import extractProps from './extractProps';
 
 export default (customProps) => {
-  const ScrollViewRender = ScrollView.render;
-  const defaultProps = ScrollView.defaultProps;
+  const FlatListRender = FlatList.render;
+  const defaultProps = FlatList.defaultProps;
 
-  ScrollView.defaultProps = {
+  FlatList.defaultProps = {
     ...defaultProps,
     ...customProps,
   };
 
-  ScrollView.render = function render(props) {
+  FlatList.render = function render(props) {
     const originalProps = props;
     props = { ...props, style: [customProps.style] };
 
     props = extractProps(props, originalProps);
 
     try {
-      return ScrollViewRender.apply(this, arguments);
+      return FlatListRender.apply(this, arguments);
     } finally {
       props = originalProps;
     }

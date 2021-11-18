@@ -1,23 +1,24 @@
-import { ScrollView } from 'react-native';
+import { StatusBar } from 'react-native';
 import extractProps from './extractProps';
 
 export default (customProps) => {
-  const ScrollViewRender = ScrollView.render;
-  const defaultProps = ScrollView.defaultProps;
+  const StatusBarRender = StatusBar.render;
+  const defaultProps = StatusBar.defaultProps;
 
-  ScrollView.defaultProps = {
+  StatusBar.defaultProps = {
     ...defaultProps,
     ...customProps,
   };
 
-  ScrollView.render = function render(props) {
+  StatusBar.render = function render(props) {
     const originalProps = props;
+
     props = { ...props, style: [customProps.style] };
 
     props = extractProps(props, originalProps);
 
     try {
-      return ScrollViewRender.apply(this, arguments);
+      return StatusBarRender.apply(this, arguments);
     } finally {
       props = originalProps;
     }

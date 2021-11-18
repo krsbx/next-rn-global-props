@@ -3,10 +3,10 @@ import extractProps from './extractProps';
 
 export default (customProps) => {
   const TextRender = Text.render;
-  const initialDefaultProps = Text.defaultProps;
+  const defaultProps = Text.defaultProps;
 
   Text.defaultProps = {
-    ...initialDefaultProps,
+    ...defaultProps,
     ...customProps,
   };
 
