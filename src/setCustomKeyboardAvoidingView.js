@@ -1,7 +1,7 @@
 import { KeyboardAvoidingView } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomKeyboardAvoidingView = (customProps) => {
   const KeyboardAvoidingViewRender = KeyboardAvoidingView.render;
   const defaultProps = KeyboardAvoidingView.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomKeyboardAvoidingView;

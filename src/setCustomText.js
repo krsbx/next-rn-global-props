@@ -1,7 +1,7 @@
 import { Text } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomText = (customProps) => {
   const TextRender = Text.render;
   const defaultProps = Text.defaultProps;
 
@@ -24,3 +24,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomText;

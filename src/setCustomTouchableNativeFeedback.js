@@ -1,7 +1,7 @@
 import { TouchableNativeFeedback } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomTouchableNativeFeedback = (customProps) => {
   const TouchableNativeFeedbackRender = TouchableNativeFeedback.render;
   const defaultProps = TouchableNativeFeedback.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomTouchableNativeFeedback;

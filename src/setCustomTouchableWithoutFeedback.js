@@ -1,7 +1,7 @@
 import { TouchableWithoutFeedback } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomTouchableWithoutFeedback = (customProps) => {
   const TouchableWithoutFeedbackRender = TouchableWithoutFeedback.render;
   const defaultProps = TouchableWithoutFeedback.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomTouchableWithoutFeedback;

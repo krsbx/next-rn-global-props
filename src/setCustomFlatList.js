@@ -1,7 +1,7 @@
 import { FlatList } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomFlatListView = (customProps) => {
   const FlatListRender = FlatList.render;
   const defaultProps = FlatList.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomFlatListView;

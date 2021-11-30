@@ -1,7 +1,7 @@
 import { TextInput } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomTextInput = (customProps) => {
   const TextInputRender = TextInput.render;
   const defaultProps = TextInput.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomTextInput;

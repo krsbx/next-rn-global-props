@@ -1,4 +1,4 @@
-export default (customProps, originalProps) => {
+const extractProps = (customProps, originalProps) => {
   if (Array.isArray(originalProps.style)) {
     originalProps.style.forEach((style) => {
       customProps.style = [...customProps.style, style];
@@ -9,3 +9,5 @@ export default (customProps, originalProps) => {
 
   return customProps;
 };
+
+export default extractProps;

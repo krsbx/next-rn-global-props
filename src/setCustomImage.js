@@ -1,7 +1,7 @@
 import { Image } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomImage = (customProps) => {
   const ImageRender = Image.render;
   const defaultProps = Image.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomImage;

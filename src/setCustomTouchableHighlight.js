@@ -1,7 +1,7 @@
 import { TouchableHighlight } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomTouchableHighlight = (customProps) => {
   const TouchableHighlightRender = TouchableHighlight.render;
   const defaultProps = TouchableHighlight.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomTouchableHighlight;

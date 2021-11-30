@@ -1,7 +1,7 @@
 import { View } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomView = (customProps) => {
   const ViewRender = View.render;
   const defaultProps = View.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomView;

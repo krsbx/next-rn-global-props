@@ -1,7 +1,7 @@
 import { Modal } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomModal = (customProps) => {
   const ModalRender = Modal.render;
   const defaultProps = Modal.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomModal;

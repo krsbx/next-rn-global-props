@@ -1,7 +1,7 @@
 import { StatusBar } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomStatusBar = (customProps) => {
   const StatusBarRender = StatusBar.render;
   const defaultProps = StatusBar.defaultProps;
 
@@ -24,3 +24,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomStatusBar;

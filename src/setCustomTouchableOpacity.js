@@ -1,7 +1,7 @@
 import { TouchableOpacity } from 'react-native';
 import extractProps from './extractProps';
 
-export default (customProps) => {
+const setCustomTouchableOpacity = (customProps) => {
   const TouchableOpacityRender = TouchableOpacity.render;
   const defaultProps = TouchableOpacity.defaultProps;
 
@@ -23,3 +23,5 @@ export default (customProps) => {
     }
   };
 };
+
+export default setCustomTouchableOpacity;
