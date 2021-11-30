@@ -11,7 +11,6 @@ import setCustomTouchableNativeFeedback from './src/setCustomTouchableNativeFeed
 import setCustomTouchableOpacity from './src/setCustomTouchableOpacity';
 import setCustomTouchableWithoutFeedback from './src/setCustomTouchableWithoutFeedback';
 import setCustomView from './src/setCustomView';
-import setCustomWebView from './src/setCustomWebView';
 
 export {
   setCustomFlatListView,
@@ -27,5 +26,4 @@ export {
   setCustomTouchableOpacity,
   setCustomTouchableWithoutFeedback,
   setCustomView,
-  setCustomWebView,
 };

@@ -1,6 +1,6 @@
 {
   "name": "next-rn-global-props",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Better React Native Global Props by adding a little tweaks",
   "main": "index.js",
   "keywords": [
