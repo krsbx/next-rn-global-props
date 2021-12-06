@@ -1,6 +1,6 @@
 {
   "name": "next-rn-global-props",
-  "version": "1.0.3-beta1",
+  "version": "1.0.3-beta2",
   "description": "Better React Native Global Props by adding a little tweaks",
   "main": "index.js",
   "keywords": [
@@ -12,8 +12,8 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@types/react-native": "^0.65.0",
-    "react-native": "0.66.1"
+    "@types/react-native": "*",
+    "react-native": "*"
   },
   "repository": {
     "type": "git",
